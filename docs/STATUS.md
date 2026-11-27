@@ -52,7 +52,7 @@ NOT VERIFIED
 - C2PA with a real trusted-CA signature (only a test CA was used); C2PA on JPEG.
 - WCAG contrast audit; real-device mobile; Safari/Firefox (only Chrome).
 - No CNN (no torch). No BOSSBase. Detection of LSB matching (13% recall) and of recompressed images (10-31% recall) is poor; real-photo false alarms ~18% (SVM, 22 held-out real covers, wide error bars).
-- v5 default: switched on main's instruction relayed during this build; revert via DEFAULT_MODEL in evidence_svc/service.py.
+- v5 default: switched by the project owner's decision during the build; revert via DEFAULT_MODEL in evidence_svc/service.py.
 - HTTPS not configured. PDF body font is Helvetica (brand fonts not embedded in the PDF).
 
 ## Final polish round (model_v6, UI, docs)
@@ -87,7 +87,7 @@ VERIFIED: `python -m sublumen.benchmark.run_v7` (backend/) -> docs/benchmark_v7.
 
 ## Upgrade round, checkpoint 5: PDF brand fonts
 VERIFIED: the report now embeds Space Grotesk (headings, wordmark) and IBM Plex Mono (hashes), converted from the @fontsource woff files (OFL). pdffonts shows both embedded; page rendered and viewed; 54 pytest pass incl. the Arabic test. Body text and the footer are still Helvetica (not embedded), Arabic text still Noto Sans Arabic.
-REMAINING (next run): hardening (upload limits fuzz, OpenAPI), user guide, reproducibility script, v7 default flip once the user agrees (stage: DEFAULT_MODEL, Models footer, README/LIMITATIONS/PDF text, browser checks).
+REMAINING (next run): hardening (upload limits fuzz, OpenAPI), user guide, reproducibility script, v7 default flip once the owner agrees (stage: DEFAULT_MODEL, Models footer, README/LIMITATIONS/PDF text, browser checks).
 
 ## Upgrade round, checkpoint 6: hostile-upload tests
 VERIFIED: tests/test_fuzz_uploads.py sends 14 junk inputs (empty, random bytes, truncated/bad-CRC PNG, a 20000x20000 decompression-bomb PNG, SVG/HTML, GIF/JPEG stubs, path text) to embed, capacity, extract, compare and evidence upload (plus analysis of accepted evidence), oversize files, hostile filenames and unknown ids: every response is a 4xx JSON error, none is a 500 and none hangs. Oversize files return 400 (not 413) with a JSON error. This is a deterministic set, not a coverage-guided fuzzer.
@@ -96,7 +96,7 @@ VERIFIED: tests/test_fuzz_uploads.py sends 14 junk inputs (empty, random bytes, 
 VERIFIED: docs/openapi.json (20 operations) is generated from the live Flask routes by `python -m sublumen.tools.openapi`; tests/test_openapi.py fails if the file is stale. It lists paths, methods, bearer-auth requirement and generic 2XX/4XX shapes. NOT done: per-field request/response schemas.
 
 ## Upgrade round, checkpoint 8: default switched to model_v7
-Switched on the user's instruction relayed by main (voice note 14:27: best results, v7 as interim default). Basis: docs/benchmark_v7.json (v7 vs v6 on two held-out sets; false alarms on full-size crops 28.7% -> 7.5%, tie-or-better at matched false alarms). Revert: DEFAULT_MODEL in evidence_svc/service.py. Docs, Models footer, PDF text updated. VERIFIED: 99 pytest pass; 17 browser checks pass with default_model_v7 (demo case scores 0.97 HIGH). Known cost: JPEG-recompressed stego recall 6-16%.
+Switched on the project owner's decision (best available results, v7 as interim default). Basis: docs/benchmark_v7.json (v7 vs v6 on two held-out sets; false alarms on full-size crops 28.7% -> 7.5%, tie-or-better at matched false alarms). Revert: DEFAULT_MODEL in evidence_svc/service.py. Docs, Models footer, PDF text updated. VERIFIED: 99 pytest pass; 17 browser checks pass with default_model_v7 (demo case scores 0.97 HIGH). Known cost: JPEG-recompressed stego recall 6-16%.
 
 ## Improvement loop, setup (2026-11-26 afternoon)
 Built a locked-test pool (ml_engine/pool.py): families imagenette (full-size), pets, synthetic for train/val; LOCKED test = Oxford Pets test photos (600), all Oxford Flowers102 (800 crops), all Kodak lossless (24 photos x 20 crops). Two test families are never seen in training. 13 variants per cover (clean PNG/JPEG95, replace 10/25/50, keyed 25, matching 10/25/50, adaptive matching 25/50 [texture-targeted +-1], JPEG95 of replace/matching). Features: v7 set (137) done for all 5554 covers x 13 = 72k rows (60 shards); SRM-lite (2628 features, srm.py) done. Evaluation harness: ml_engine/lockeval.py (cluster bootstrap by photo, thresholds from val only, every test scoring appended to data/pool/LOCKED_LOG.md). Nothing scored on the locked test yet.
