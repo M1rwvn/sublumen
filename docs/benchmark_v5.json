@@ -1,0 +1,495 @@
+{
+ "detectors": {
+  "chi_square_rule": {
+   "lsb_matching": {
+    "accuracy": 0.37592592592592594,
+    "f1": 0.4484451718494272,
+    "fn": 313,
+    "fp": 24,
+    "fpr": 0.26666666666666666,
+    "precision": 0.8509316770186336,
+    "recall": 0.30444444444444446,
+    "tn": 66,
+    "tp": 137
+   },
+   "lsb_replace": {
+    "accuracy": 0.8,
+    "f1": 0.8714285714285714,
+    "fn": 84,
+    "fp": 24,
+    "fpr": 0.26666666666666666,
+    "precision": 0.9384615384615385,
+    "recall": 0.8133333333333334,
+    "tn": 66,
+    "tp": 366
+   },
+   "lsb_replace_keyed": {
+    "accuracy": 0.49444444444444446,
+    "f1": 0.5955555555555556,
+    "fn": 249,
+    "fp": 24,
+    "fpr": 0.26666666666666666,
+    "precision": 0.8933333333333333,
+    "recall": 0.44666666666666666,
+    "tn": 66,
+    "tp": 201
+   }
+  },
+  "random_forest": {
+   "lsb_matching": {
+    "accuracy": 0.3648148148148148,
+    "f1": 0.43305785123966944,
+    "fn": 319,
+    "fp": 24,
+    "fpr": 0.26666666666666666,
+    "precision": 0.8451612903225807,
+    "recall": 0.2911111111111111,
+    "tn": 66,
+    "tp": 131
+   },
+   "lsb_replace": {
+    "accuracy": 0.9074074074074074,
+    "f1": 0.9443207126948775,
+    "fn": 26,
+    "fp": 24,
+    "fpr": 0.26666666666666666,
+    "precision": 0.9464285714285714,
+    "recall": 0.9422222222222222,
+    "tn": 66,
+    "tp": 424
+   },
+   "lsb_replace_keyed": {
+    "accuracy": 0.9222222222222223,
+    "f1": 0.9536423841059603,
+    "fn": 18,
+    "fp": 24,
+    "fpr": 0.26666666666666666,
+    "precision": 0.9473684210526315,
+    "recall": 0.96,
+    "tn": 66,
+    "tp": 432
+   }
+  },
+  "rs_rule": {
+   "lsb_matching": {
+    "accuracy": 0.2462962962962963,
+    "f1": 0.20039292730844793,
+    "fn": 399,
+    "fp": 8,
+    "fpr": 0.08888888888888889,
+    "precision": 0.864406779661017,
+    "recall": 0.11333333333333333,
+    "tn": 82,
+    "tp": 51
+   },
+   "lsb_replace": {
+    "accuracy": 0.7537037037037037,
+    "f1": 0.8301404853128991,
+    "fn": 125,
+    "fp": 8,
+    "fpr": 0.08888888888888889,
+    "precision": 0.975975975975976,
+    "recall": 0.7222222222222222,
+    "tn": 82,
+    "tp": 325
+   },
+   "lsb_replace_keyed": {
+    "accuracy": 0.7944444444444444,
+    "f1": 0.862111801242236,
+    "fn": 103,
+    "fp": 8,
+    "fpr": 0.08888888888888889,
+    "precision": 0.9774647887323944,
+    "recall": 0.7711111111111111,
+    "tn": 82,
+    "tp": 347
+   }
+  },
+  "svm_rbf": {
+   "lsb_matching": {
+    "accuracy": 0.26296296296296295,
+    "f1": 0.2286821705426357,
+    "fn": 391,
+    "fp": 7,
+    "fpr": 0.07777777777777778,
+    "precision": 0.8939393939393939,
+    "recall": 0.13111111111111112,
+    "tn": 83,
+    "tp": 59
+   },
+   "lsb_replace": {
+    "accuracy": 0.8314814814814815,
+    "f1": 0.8894289185905225,
+    "fn": 84,
+    "fp": 7,
+    "fpr": 0.07777777777777778,
+    "precision": 0.9812332439678284,
+    "recall": 0.8133333333333334,
+    "tn": 83,
+    "tp": 366
+   },
+   "lsb_replace_keyed": {
+    "accuracy": 0.8462962962962963,
+    "f1": 0.9001203369434416,
+    "fn": 76,
+    "fp": 7,
+    "fpr": 0.07777777777777778,
+    "precision": 0.9816272965879265,
+    "recall": 0.8311111111111111,
+    "tn": 83,
+    "tp": 374
+   }
+  }
+ },
+ "fpr_by_cover_type": {
+  "chi_square_rule": {
+   "graphic": 0.0,
+   "imagenette": 0.5454545454545454,
+   "photo_like": 0.0,
+   "texture": 0.6
+  },
+  "random_forest": {
+   "graphic": 0.0,
+   "imagenette": 0.6363636363636364,
+   "photo_like": 0.12,
+   "texture": 0.35
+  },
+  "rs_rule": {
+   "graphic": 0.0,
+   "imagenette": 0.3181818181818182,
+   "photo_like": 0.0,
+   "texture": 0.05
+  },
+  "svm_rbf": {
+   "graphic": 0.0,
+   "imagenette": 0.18181818181818182,
+   "photo_like": 0.08,
+   "texture": 0.05
+  }
+ },
+ "grid": {
+  "chi_square_rule": {
+   "lsb_matching": {
+    "graphic@0.05": 0.043478260869565216,
+    "graphic@0.1": 0.043478260869565216,
+    "graphic@0.25": 0.0,
+    "graphic@0.5": 0.043478260869565216,
+    "graphic@1.0": 0.0,
+    "imagenette@0.05": 0.6363636363636364,
+    "imagenette@0.1": 0.7727272727272727,
+    "imagenette@0.25": 0.8181818181818182,
+    "imagenette@0.5": 0.9090909090909091,
+    "imagenette@1.0": 0.9090909090909091,
+    "photo_like@0.05": 0.0,
+    "photo_like@0.1": 0.0,
+    "photo_like@0.25": 0.0,
+    "photo_like@0.5": 0.0,
+    "photo_like@1.0": 0.0,
+    "texture@0.05": 0.45,
+    "texture@0.1": 0.45,
+    "texture@0.25": 0.45,
+    "texture@0.5": 0.4,
+    "texture@1.0": 0.5
+   },
+   "lsb_replace": {
+    "graphic@0.05": 0.13043478260869565,
+    "graphic@0.1": 0.782608695652174,
+    "graphic@0.25": 0.9565217391304348,
+    "graphic@0.5": 1.0,
+    "graphic@1.0": 1.0,
+    "imagenette@0.05": 0.6363636363636364,
+    "imagenette@0.1": 0.9090909090909091,
+    "imagenette@0.25": 0.9545454545454546,
+    "imagenette@0.5": 1.0,
+    "imagenette@1.0": 1.0,
+    "photo_like@0.05": 0.0,
+    "photo_like@0.1": 0.72,
+    "photo_like@0.25": 0.88,
+    "photo_like@0.5": 1.0,
+    "photo_like@1.0": 0.92,
+    "texture@0.05": 0.9,
+    "texture@0.1": 0.75,
+    "texture@0.25": 0.9,
+    "texture@0.5": 0.95,
+    "texture@1.0": 1.0
+   },
+   "lsb_replace_keyed": {
+    "graphic@0.05": 0.0,
+    "graphic@0.1": 0.043478260869565216,
+    "graphic@0.25": 0.043478260869565216,
+    "graphic@0.5": 0.08695652173913043,
+    "graphic@1.0": 1.0,
+    "imagenette@0.05": 0.5909090909090909,
+    "imagenette@0.1": 0.5909090909090909,
+    "imagenette@0.25": 0.5909090909090909,
+    "imagenette@0.5": 0.6818181818181818,
+    "imagenette@1.0": 1.0,
+    "photo_like@0.05": 0.0,
+    "photo_like@0.1": 0.0,
+    "photo_like@0.25": 0.0,
+    "photo_like@0.5": 0.04,
+    "photo_like@1.0": 1.0,
+    "texture@0.05": 0.5,
+    "texture@0.1": 0.55,
+    "texture@0.25": 0.8,
+    "texture@0.5": 0.75,
+    "texture@1.0": 1.0
+   }
+  },
+  "random_forest": {
+   "lsb_matching": {
+    "graphic@0.05": 0.0,
+    "graphic@0.1": 0.043478260869565216,
+    "graphic@0.25": 0.08695652173913043,
+    "graphic@0.5": 0.17391304347826086,
+    "graphic@1.0": 0.21739130434782608,
+    "imagenette@0.05": 0.7727272727272727,
+    "imagenette@0.1": 0.7272727272727273,
+    "imagenette@0.25": 0.7727272727272727,
+    "imagenette@0.5": 0.7727272727272727,
+    "imagenette@1.0": 0.6363636363636364,
+    "photo_like@0.05": 0.08,
+    "photo_like@0.1": 0.08,
+    "photo_like@0.25": 0.12,
+    "photo_like@0.5": 0.08,
+    "photo_like@1.0": 0.04,
+    "texture@0.05": 0.3,
+    "texture@0.1": 0.3,
+    "texture@0.25": 0.15,
+    "texture@0.5": 0.25,
+    "texture@1.0": 0.4
+   },
+   "lsb_replace": {
+    "graphic@0.05": 0.4782608695652174,
+    "graphic@0.1": 1.0,
+    "graphic@0.25": 1.0,
+    "graphic@0.5": 1.0,
+    "graphic@1.0": 1.0,
+    "imagenette@0.05": 1.0,
+    "imagenette@0.1": 1.0,
+    "imagenette@0.25": 1.0,
+    "imagenette@0.5": 1.0,
+    "imagenette@1.0": 1.0,
+    "photo_like@0.05": 0.68,
+    "photo_like@0.1": 1.0,
+    "photo_like@0.25": 1.0,
+    "photo_like@0.5": 1.0,
+    "photo_like@1.0": 1.0,
+    "texture@0.05": 0.75,
+    "texture@0.1": 0.95,
+    "texture@0.25": 1.0,
+    "texture@0.5": 1.0,
+    "texture@1.0": 1.0
+   },
+   "lsb_replace_keyed": {
+    "graphic@0.05": 0.8695652173913043,
+    "graphic@0.1": 1.0,
+    "graphic@0.25": 1.0,
+    "graphic@0.5": 1.0,
+    "graphic@1.0": 1.0,
+    "imagenette@0.05": 1.0,
+    "imagenette@0.1": 0.9545454545454546,
+    "imagenette@0.25": 1.0,
+    "imagenette@0.5": 1.0,
+    "imagenette@1.0": 1.0,
+    "photo_like@0.05": 0.64,
+    "photo_like@0.1": 1.0,
+    "photo_like@0.25": 1.0,
+    "photo_like@0.5": 1.0,
+    "photo_like@1.0": 1.0,
+    "texture@0.05": 0.8,
+    "texture@0.1": 0.95,
+    "texture@0.25": 1.0,
+    "texture@0.5": 1.0,
+    "texture@1.0": 1.0
+   }
+  },
+  "rs_rule": {
+   "lsb_matching": {
+    "graphic@0.05": 0.0,
+    "graphic@0.1": 0.0,
+    "graphic@0.25": 0.0,
+    "graphic@0.5": 0.0,
+    "graphic@1.0": 0.13043478260869565,
+    "imagenette@0.05": 0.4090909090909091,
+    "imagenette@0.1": 0.45454545454545453,
+    "imagenette@0.25": 0.45454545454545453,
+    "imagenette@0.5": 0.45454545454545453,
+    "imagenette@1.0": 0.3181818181818182,
+    "photo_like@0.05": 0.0,
+    "photo_like@0.1": 0.0,
+    "photo_like@0.25": 0.0,
+    "photo_like@0.5": 0.0,
+    "photo_like@1.0": 0.0,
+    "texture@0.05": 0.05,
+    "texture@0.1": 0.0,
+    "texture@0.25": 0.0,
+    "texture@0.5": 0.05,
+    "texture@1.0": 0.0
+   },
+   "lsb_replace": {
+    "graphic@0.05": 0.0,
+    "graphic@0.1": 0.08695652173913043,
+    "graphic@0.25": 1.0,
+    "graphic@0.5": 1.0,
+    "graphic@1.0": 0.782608695652174,
+    "imagenette@0.05": 0.5454545454545454,
+    "imagenette@0.1": 0.7272727272727273,
+    "imagenette@0.25": 1.0,
+    "imagenette@0.5": 1.0,
+    "imagenette@1.0": 0.9545454545454546,
+    "photo_like@0.05": 0.08,
+    "photo_like@0.1": 0.56,
+    "photo_like@0.25": 1.0,
+    "photo_like@0.5": 1.0,
+    "photo_like@1.0": 0.88,
+    "texture@0.05": 0.2,
+    "texture@0.1": 0.7,
+    "texture@0.25": 1.0,
+    "texture@0.5": 1.0,
+    "texture@1.0": 1.0
+   },
+   "lsb_replace_keyed": {
+    "graphic@0.05": 0.0,
+    "graphic@0.1": 0.5652173913043478,
+    "graphic@0.25": 1.0,
+    "graphic@0.5": 1.0,
+    "graphic@1.0": 0.8695652173913043,
+    "imagenette@0.05": 0.6363636363636364,
+    "imagenette@0.1": 0.9545454545454546,
+    "imagenette@0.25": 0.9545454545454546,
+    "imagenette@0.5": 1.0,
+    "imagenette@1.0": 0.9090909090909091,
+    "photo_like@0.05": 0.08,
+    "photo_like@0.1": 0.68,
+    "photo_like@0.25": 1.0,
+    "photo_like@0.5": 1.0,
+    "photo_like@1.0": 0.88,
+    "texture@0.05": 0.3,
+    "texture@0.1": 0.75,
+    "texture@0.25": 1.0,
+    "texture@0.5": 1.0,
+    "texture@1.0": 0.9
+   }
+  },
+  "svm_rbf": {
+   "lsb_matching": {
+    "graphic@0.05": 0.0,
+    "graphic@0.1": 0.0,
+    "graphic@0.25": 0.043478260869565216,
+    "graphic@0.5": 0.17391304347826086,
+    "graphic@1.0": 0.17391304347826086,
+    "imagenette@0.05": 0.2727272727272727,
+    "imagenette@0.1": 0.3181818181818182,
+    "imagenette@0.25": 0.4090909090909091,
+    "imagenette@0.5": 0.5,
+    "imagenette@1.0": 0.4090909090909091,
+    "photo_like@0.05": 0.04,
+    "photo_like@0.1": 0.04,
+    "photo_like@0.25": 0.04,
+    "photo_like@0.5": 0.04,
+    "photo_like@1.0": 0.04,
+    "texture@0.05": 0.05,
+    "texture@0.1": 0.05,
+    "texture@0.25": 0.0,
+    "texture@0.5": 0.05,
+    "texture@1.0": 0.0
+   },
+   "lsb_replace": {
+    "graphic@0.05": 0.17391304347826086,
+    "graphic@0.1": 0.9130434782608695,
+    "graphic@0.25": 0.9565217391304348,
+    "graphic@0.5": 1.0,
+    "graphic@1.0": 0.782608695652174,
+    "imagenette@0.05": 0.45454545454545453,
+    "imagenette@0.1": 0.6818181818181818,
+    "imagenette@0.25": 0.8181818181818182,
+    "imagenette@0.5": 0.9090909090909091,
+    "imagenette@1.0": 0.9545454545454546,
+    "photo_like@0.05": 0.48,
+    "photo_like@0.1": 0.96,
+    "photo_like@0.25": 1.0,
+    "photo_like@0.5": 1.0,
+    "photo_like@1.0": 1.0,
+    "texture@0.05": 0.35,
+    "texture@0.1": 0.8,
+    "texture@0.25": 1.0,
+    "texture@0.5": 1.0,
+    "texture@1.0": 1.0
+   },
+   "lsb_replace_keyed": {
+    "graphic@0.05": 0.2608695652173913,
+    "graphic@0.1": 0.9565217391304348,
+    "graphic@0.25": 0.9565217391304348,
+    "graphic@0.5": 1.0,
+    "graphic@1.0": 0.8695652173913043,
+    "imagenette@0.05": 0.5,
+    "imagenette@0.1": 0.8181818181818182,
+    "imagenette@0.25": 0.8636363636363636,
+    "imagenette@0.5": 1.0,
+    "imagenette@1.0": 0.9090909090909091,
+    "photo_like@0.05": 0.48,
+    "photo_like@0.1": 0.96,
+    "photo_like@0.25": 1.0,
+    "photo_like@0.5": 1.0,
+    "photo_like@1.0": 1.0,
+    "texture@0.05": 0.3,
+    "texture@0.1": 0.8,
+    "texture@0.25": 1.0,
+    "texture@0.5": 1.0,
+    "texture@1.0": 0.9
+   }
+  }
+ },
+ "meta": {
+  "covers_per_type": {
+   "graphic": 23,
+   "imagenette": 22,
+   "photo_like": 25,
+   "texture": 20
+  },
+  "model": "model_v5",
+  "n_covers": 90,
+  "notes": [
+   "Held-out test-split covers only; models never saw them.",
+   "lsb_matching and lsb_replace_keyed (keyed order over the whole image) are NOT in the training data: out-of-distribution tests.",
+   "Cover set: see covers_per_type (synthetic, 2-photo crops, and Imagenette real JPEG-derived photos if present); not BOSSBase.",
+   "Payload bits are seeded random (equivalent to ciphertext)."
+  ],
+  "numpy": "2.2.6",
+  "python": "3.10.12",
+  "rates": [
+   0.05,
+   0.1,
+   0.25,
+   0.5,
+   1.0
+  ],
+  "seed": 2026,
+  "sklearn": "1.7.2",
+  "thresholds": {
+   "chi_p": 0.9,
+   "rs": 0.1
+  }
+ },
+ "robustness_recall_at_50pct_replace": {
+  "jpeg_q95": {
+   "chi_square_rule": 0.23333333333333334,
+   "random_forest": 0.3111111111111111,
+   "rs_rule": 0.1111111111111111,
+   "svm_rbf": 0.1
+  },
+  "none": {
+   "chi_square_rule": 0.9777777777777777,
+   "random_forest": 1.0,
+   "rs_rule": 1.0,
+   "svm_rbf": 0.9888888888888889
+  },
+  "resize_90": {
+   "chi_square_rule": 0.45555555555555555,
+   "random_forest": 0.7888888888888889,
+   "rs_rule": 0.4888888888888889,
+   "svm_rbf": 0.6
+  }
+ }
+}

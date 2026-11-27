@@ -1,0 +1,68 @@
+{
+ "description": "Held-out evaluation on dataset_v4 test split: 450 clean covers (300 Imagenette crops from source photos never used in v4 train/val, 50 each graphic/texture/photo_like) and their stego/recompressed variants. v6 threshold chosen on validation only. CAVEAT: v5 and v2 were trained earlier on random Imagenette crops (dataset_v3) whose source photos may overlap these test photos, which can only favour v5/v2.",
+ "models": {
+  "model_v2_svm_rbf": {
+   "fpr_png_all": 0.22666666666666666,
+   "fpr_png_imagenette": 0.3333333333333333,
+   "fpr_jpeg95_covers": 0.22444444444444445,
+   "n_test_covers": 450,
+   "n_test_imagenette_covers": 300,
+   "fpr_png_imagenette_wilson95": [
+    0.282,
+    0.388
+   ],
+   "recall": {
+    "lsb_matching|jpeg95|0.5": 0.21777777777777776,
+    "lsb_matching|png|0.25": 0.23777777777777778,
+    "lsb_matching|png|0.5": 0.2511111111111111,
+    "lsb_replace|jpeg95|0.5": 0.30666666666666664,
+    "lsb_replace|png|0.1": 0.82,
+    "lsb_replace|png|0.25": 0.9488888888888889,
+    "lsb_replace|png|0.5": 0.9888888888888889,
+    "lsb_replace_keyed|png|0.25": 0.9733333333333334
+   }
+  },
+  "model_v5_svm_rbf": {
+   "fpr_png_all": 0.12444444444444444,
+   "fpr_png_imagenette": 0.18,
+   "fpr_jpeg95_covers": 0.1511111111111111,
+   "n_test_covers": 450,
+   "n_test_imagenette_covers": 300,
+   "fpr_png_imagenette_wilson95": [
+    0.141,
+    0.227
+   ],
+   "recall": {
+    "lsb_matching|jpeg95|0.5": 0.18444444444444444,
+    "lsb_matching|png|0.25": 0.1688888888888889,
+    "lsb_matching|png|0.5": 0.2,
+    "lsb_replace|jpeg95|0.5": 0.23555555555555555,
+    "lsb_replace|png|0.1": 0.7333333333333333,
+    "lsb_replace|png|0.25": 0.9288888888888889,
+    "lsb_replace|png|0.5": 0.98,
+    "lsb_replace_keyed|png|0.25": 0.9755555555555555
+   }
+  },
+  "model_v6_svm_rbf": {
+   "fpr_png_all": 0.05555555555555555,
+   "fpr_png_imagenette": 0.07333333333333333,
+   "fpr_jpeg95_covers": 0.12,
+   "n_test_covers": 450,
+   "n_test_imagenette_covers": 300,
+   "fpr_png_imagenette_wilson95": [
+    0.049,
+    0.109
+   ],
+   "recall": {
+    "lsb_matching|jpeg95|0.5": 0.3288888888888889,
+    "lsb_matching|png|0.25": 0.54,
+    "lsb_matching|png|0.5": 0.6866666666666666,
+    "lsb_replace|jpeg95|0.5": 0.3377777777777778,
+    "lsb_replace|png|0.1": 0.74,
+    "lsb_replace|png|0.25": 0.9511111111111111,
+    "lsb_replace|png|0.5": 0.9933333333333333,
+    "lsb_replace_keyed|png|0.25": 0.98
+   }
+  }
+ }
+}

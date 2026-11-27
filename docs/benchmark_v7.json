@@ -1,0 +1,917 @@
+{
+ "detectors": {
+  "chi_square_rule": {
+   "fullsize:fpr_jpeg95_covers": {
+    "ci95": [
+     0.4583333333333333,
+     0.5366666666666666
+    ],
+    "n": 600,
+    "value": 0.49666666666666665
+   },
+   "fullsize:fpr_png_all": {
+    "ci95": [
+     0.5133333333333333,
+     0.5933333333333334
+    ],
+    "n": 600,
+    "value": 0.5533333333333333
+   },
+   "fullsize:fpr_png_real_photos": {
+    "ci95": [
+     0.5116666666666667,
+     0.5933333333333334
+    ],
+    "n": 600,
+    "value": 0.5533333333333333
+   },
+   "fullsize:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.5,
+     0.58
+    ],
+    "n": 600,
+    "value": 0.54
+   },
+   "fullsize:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.6516666666666666,
+     0.725
+    ],
+    "n": 600,
+    "value": 0.6916666666666667
+   },
+   "fullsize:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.645,
+     0.72
+    ],
+    "n": 600,
+    "value": 0.6816666666666666
+   },
+   "fullsize:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.615,
+     0.69
+    ],
+    "n": 600,
+    "value": 0.6533333333333333
+   },
+   "fullsize:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.49333333333333335,
+     0.5766666666666667
+    ],
+    "n": 600,
+    "value": 0.5366666666666666
+   },
+   "fullsize:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.915,
+     0.955
+    ],
+    "n": 600,
+    "value": 0.935
+   },
+   "fullsize:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.9633333333333334,
+     0.9883333333333333
+    ],
+    "n": 600,
+    "value": 0.9766666666666667
+   },
+   "fullsize:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.9833333333333333,
+     0.9983333333333333
+    ],
+    "n": 600,
+    "value": 0.9916666666666667
+   },
+   "imagenette160:fpr_jpeg95_covers": {
+    "ci95": [
+     0.34444444444444444,
+     0.43555555555555553
+    ],
+    "n": 450,
+    "value": 0.39111111111111113
+   },
+   "imagenette160:fpr_png_all": {
+    "ci95": [
+     0.31555555555555553,
+     0.40444444444444444
+    ],
+    "n": 450,
+    "value": 0.35777777777777775
+   },
+   "imagenette160:fpr_png_real_photos": {
+    "ci95": [
+     0.4,
+     0.51
+    ],
+    "n": 300,
+    "value": 0.4533333333333333
+   },
+   "imagenette160:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.3844444444444444,
+     0.47555555555555556
+    ],
+    "n": 450,
+    "value": 0.4311111111111111
+   },
+   "imagenette160:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.5022222222222222,
+     0.5933333333333334
+    ],
+    "n": 450,
+    "value": 0.5466666666666666
+   },
+   "imagenette160:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.5,
+     0.5911111111111111
+    ],
+    "n": 450,
+    "value": 0.5466666666666666
+   },
+   "imagenette160:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.4088888888888889,
+     0.49777777777777776
+    ],
+    "n": 450,
+    "value": 0.4533333333333333
+   },
+   "imagenette160:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.3888888888888889,
+     0.4777777777777778
+    ],
+    "n": 450,
+    "value": 0.43333333333333335
+   },
+   "imagenette160:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.8844444444444445,
+     0.9355555555555556
+    ],
+    "n": 450,
+    "value": 0.9111111111111111
+   },
+   "imagenette160:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.9466666666666667,
+     0.98
+    ],
+    "n": 450,
+    "value": 0.9644444444444444
+   },
+   "imagenette160:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.9933333333333333,
+     1.0
+    ],
+    "n": 450,
+    "value": 0.9977777777777778
+   }
+  },
+  "model_v5_svm_rbf": {
+   "fullsize:fpr_jpeg95_covers": {
+    "ci95": [
+     0.22333333333333333,
+     0.29333333333333333
+    ],
+    "n": 600,
+    "value": 0.25833333333333336
+   },
+   "fullsize:fpr_png_all": {
+    "ci95": [
+     0.275,
+     0.35
+    ],
+    "n": 600,
+    "value": 0.31166666666666665
+   },
+   "fullsize:fpr_png_real_photos": {
+    "ci95": [
+     0.27666666666666667,
+     0.35
+    ],
+    "n": 600,
+    "value": 0.31166666666666665
+   },
+   "fullsize:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.225,
+     0.29333333333333333
+    ],
+    "n": 600,
+    "value": 0.25833333333333336
+   },
+   "fullsize:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.30333333333333334,
+     0.38004166666666644
+    ],
+    "n": 600,
+    "value": 0.3416666666666667
+   },
+   "fullsize:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.2683333333333333,
+     0.3433333333333333
+    ],
+    "n": 600,
+    "value": 0.30333333333333334
+   },
+   "fullsize:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.9383333333333334,
+     0.97
+    ],
+    "n": 600,
+    "value": 0.955
+   },
+   "fullsize:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.27995833333333336,
+     0.3516666666666667
+    ],
+    "n": 600,
+    "value": 0.315
+   },
+   "fullsize:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.6716666666666666,
+     0.745
+    ],
+    "n": 600,
+    "value": 0.7083333333333334
+   },
+   "fullsize:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.8566666666666667,
+     0.9066666666666666
+    ],
+    "n": 600,
+    "value": 0.8833333333333333
+   },
+   "fullsize:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.9533333333333334,
+     0.9816666666666667
+    ],
+    "n": 600,
+    "value": 0.9683333333333334
+   },
+   "imagenette160:fpr_jpeg95_covers": {
+    "ci95": [
+     0.11777777777777777,
+     0.1844999999999997
+    ],
+    "n": 450,
+    "value": 0.1511111111111111
+   },
+   "imagenette160:fpr_png_all": {
+    "ci95": [
+     0.09333333333333334,
+     0.15555555555555556
+    ],
+    "n": 450,
+    "value": 0.12444444444444444
+   },
+   "imagenette160:fpr_png_real_photos": {
+    "ci95": [
+     0.13666666666666666,
+     0.22333333333333333
+    ],
+    "n": 300,
+    "value": 0.18
+   },
+   "imagenette160:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.14883333333333332,
+     0.2222222222222222
+    ],
+    "n": 450,
+    "value": 0.18444444444444444
+   },
+   "imagenette160:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.13555555555555557,
+     0.2044999999999997
+    ],
+    "n": 450,
+    "value": 0.1688888888888889
+   },
+   "imagenette160:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.16444444444444445,
+     0.23777777777777778
+    ],
+    "n": 450,
+    "value": 0.2
+   },
+   "imagenette160:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.96,
+     0.9888888888888889
+    ],
+    "n": 450,
+    "value": 0.9755555555555555
+   },
+   "imagenette160:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.19555555555555557,
+     0.27555555555555555
+    ],
+    "n": 450,
+    "value": 0.23555555555555555
+   },
+   "imagenette160:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.6932777777777778,
+     0.7733333333333333
+    ],
+    "n": 450,
+    "value": 0.7333333333333333
+   },
+   "imagenette160:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.9044444444444445,
+     0.9533333333333334
+    ],
+    "n": 450,
+    "value": 0.9288888888888889
+   },
+   "imagenette160:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.9666666666666667,
+     0.9911111111111112
+    ],
+    "n": 450,
+    "value": 0.98
+   }
+  },
+  "model_v6_svm_rbf": {
+   "fullsize:fpr_jpeg95_covers": {
+    "ci95": [
+     0.18166666666666667,
+     0.24833333333333332
+    ],
+    "n": 600,
+    "value": 0.21333333333333335
+   },
+   "fullsize:fpr_png_all": {
+    "ci95": [
+     0.25,
+     0.3233333333333333
+    ],
+    "n": 600,
+    "value": 0.2866666666666667
+   },
+   "fullsize:fpr_png_real_photos": {
+    "ci95": [
+     0.251625,
+     0.3233333333333333
+    ],
+    "n": 600,
+    "value": 0.2866666666666667
+   },
+   "fullsize:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.26666666666666666,
+     0.34
+    ],
+    "n": 600,
+    "value": 0.30333333333333334
+   },
+   "fullsize:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.4816666666666667,
+     0.5616666666666666
+    ],
+    "n": 600,
+    "value": 0.5216666666666666
+   },
+   "fullsize:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.5966666666666667,
+     0.6733333333333333
+    ],
+    "n": 600,
+    "value": 0.6333333333333333
+   },
+   "fullsize:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.7583333333333333,
+     0.8233333333333334
+    ],
+    "n": 600,
+    "value": 0.79
+   },
+   "fullsize:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.27166666666666667,
+     0.3433333333333333
+    ],
+    "n": 600,
+    "value": 0.30833333333333335
+   },
+   "fullsize:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.5016666666666667,
+     0.5833333333333334
+    ],
+    "n": 600,
+    "value": 0.5433333333333333
+   },
+   "fullsize:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.7233333333333334,
+     0.79
+    ],
+    "n": 600,
+    "value": 0.7583333333333333
+   },
+   "fullsize:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.895,
+     0.9383333333333334
+    ],
+    "n": 600,
+    "value": 0.9166666666666666
+   },
+   "imagenette160:fpr_jpeg95_covers": {
+    "ci95": [
+     0.09111111111111111,
+     0.1511111111111111
+    ],
+    "n": 450,
+    "value": 0.12
+   },
+   "imagenette160:fpr_png_all": {
+    "ci95": [
+     0.035555555555555556,
+     0.07777777777777778
+    ],
+    "n": 450,
+    "value": 0.05555555555555555
+   },
+   "imagenette160:fpr_png_real_photos": {
+    "ci95": [
+     0.04666666666666667,
+     0.10333333333333333
+    ],
+    "n": 300,
+    "value": 0.07333333333333333
+   },
+   "imagenette160:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.2866666666666667,
+     0.37333333333333335
+    ],
+    "n": 450,
+    "value": 0.3288888888888889
+   },
+   "imagenette160:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.49550000000000005,
+     0.5844444444444444
+    ],
+    "n": 450,
+    "value": 0.54
+   },
+   "imagenette160:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.6422222222222222,
+     0.7288888888888889
+    ],
+    "n": 450,
+    "value": 0.6866666666666666
+   },
+   "imagenette160:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.9666666666666667,
+     0.9911111111111112
+    ],
+    "n": 450,
+    "value": 0.98
+   },
+   "imagenette160:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.29333333333333333,
+     0.38222222222222224
+    ],
+    "n": 450,
+    "value": 0.3377777777777778
+   },
+   "imagenette160:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.7,
+     0.7822222222222223
+    ],
+    "n": 450,
+    "value": 0.74
+   },
+   "imagenette160:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.9311111111111111,
+     0.9711111111111111
+    ],
+    "n": 450,
+    "value": 0.9511111111111111
+   },
+   "imagenette160:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.9844444444444445,
+     1.0
+    ],
+    "n": 450,
+    "value": 0.9933333333333333
+   }
+  },
+  "model_v7_svm_rbf": {
+   "fullsize:fpr_jpeg95_covers": {
+    "ci95": [
+     0.006666666666666667,
+     0.02666666666666667
+    ],
+    "n": 600,
+    "value": 0.016666666666666666
+   },
+   "fullsize:fpr_png_all": {
+    "ci95": [
+     0.055,
+     0.09666666666666666
+    ],
+    "n": 600,
+    "value": 0.075
+   },
+   "fullsize:fpr_png_real_photos": {
+    "ci95": [
+     0.055,
+     0.09666666666666666
+    ],
+    "n": 600,
+    "value": 0.075
+   },
+   "fullsize:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.043333333333333335,
+     0.08
+    ],
+    "n": 600,
+    "value": 0.06166666666666667
+   },
+   "fullsize:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.3283333333333333,
+     0.4083333333333333
+    ],
+    "n": 600,
+    "value": 0.36833333333333335
+   },
+   "fullsize:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.5083333333333333,
+     0.59
+    ],
+    "n": 600,
+    "value": 0.5483333333333333
+   },
+   "fullsize:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.8466666666666667,
+     0.9
+    ],
+    "n": 600,
+    "value": 0.8733333333333333
+   },
+   "fullsize:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.051666666666666666,
+     0.09333333333333334
+    ],
+    "n": 600,
+    "value": 0.07166666666666667
+   },
+   "fullsize:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.3933333333333333,
+     0.47333333333333333
+    ],
+    "n": 600,
+    "value": 0.43333333333333335
+   },
+   "fullsize:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.8,
+     0.86
+    ],
+    "n": 600,
+    "value": 0.83
+   },
+   "fullsize:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.9683333333333334,
+     0.99
+    ],
+    "n": 600,
+    "value": 0.98
+   },
+   "imagenette160:fpr_jpeg95_covers": {
+    "ci95": [
+     0.013333333333333334,
+     0.044444444444444446
+    ],
+    "n": 450,
+    "value": 0.02666666666666667
+   },
+   "imagenette160:fpr_png_all": {
+    "ci95": [
+     0.0044444444444444444,
+     0.026722222222221922
+    ],
+    "n": 450,
+    "value": 0.015555555555555555
+   },
+   "imagenette160:fpr_png_real_photos": {
+    "ci95": [
+     0.006666666666666667,
+     0.043333333333333335
+    ],
+    "n": 300,
+    "value": 0.023333333333333334
+   },
+   "imagenette160:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.12444444444444444,
+     0.19111111111111112
+    ],
+    "n": 450,
+    "value": 0.15555555555555556
+   },
+   "imagenette160:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.4022222222222222,
+     0.49333333333333335
+    ],
+    "n": 450,
+    "value": 0.4488888888888889
+   },
+   "imagenette160:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.5688888888888889,
+     0.66
+    ],
+    "n": 450,
+    "value": 0.6155555555555555
+   },
+   "imagenette160:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.9311111111111111,
+     0.9688888888888889
+    ],
+    "n": 450,
+    "value": 0.9511111111111111
+   },
+   "imagenette160:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.12444444444444444,
+     0.19333333333333333
+    ],
+    "n": 450,
+    "value": 0.15777777777777777
+   },
+   "imagenette160:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.5,
+     0.5933333333333334
+    ],
+    "n": 450,
+    "value": 0.5488888888888889
+   },
+   "imagenette160:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.8933333333333333,
+     0.9422222222222222
+    ],
+    "n": 450,
+    "value": 0.9177777777777778
+   },
+   "imagenette160:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     0.9844444444444445,
+     1.0
+    ],
+    "n": 450,
+    "value": 0.9933333333333333
+   }
+  },
+  "rs_rule": {
+   "fullsize:fpr_jpeg95_covers": {
+    "ci95": [
+     0.30995833333333334,
+     0.3883333333333333
+    ],
+    "n": 600,
+    "value": 0.34833333333333333
+   },
+   "fullsize:fpr_png_all": {
+    "ci95": [
+     0.31166666666666665,
+     0.385
+    ],
+    "n": 600,
+    "value": 0.34833333333333333
+   },
+   "fullsize:fpr_png_real_photos": {
+    "ci95": [
+     0.31333333333333335,
+     0.3883333333333333
+    ],
+    "n": 600,
+    "value": 0.34833333333333333
+   },
+   "fullsize:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.31166666666666665,
+     0.39
+    ],
+    "n": 600,
+    "value": 0.35
+   },
+   "fullsize:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.32666666666666666,
+     0.40166666666666667
+    ],
+    "n": 600,
+    "value": 0.365
+   },
+   "fullsize:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.27495833333333336,
+     0.35
+    ],
+    "n": 600,
+    "value": 0.31166666666666665
+   },
+   "fullsize:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.975,
+     0.995
+    ],
+    "n": 600,
+    "value": 0.985
+   },
+   "fullsize:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.3566666666666667,
+     0.43333333333333335
+    ],
+    "n": 600,
+    "value": 0.3933333333333333
+   },
+   "fullsize:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.6516666666666666,
+     0.7250416666666665
+    ],
+    "n": 600,
+    "value": 0.6883333333333334
+   },
+   "fullsize:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.9483333333333334,
+     0.9783749999999998
+    ],
+    "n": 600,
+    "value": 0.965
+   },
+   "fullsize:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n": 600,
+    "value": 1.0
+   },
+   "imagenette160:fpr_jpeg95_covers": {
+    "ci95": [
+     0.19111111111111112,
+     0.2688888888888889
+    ],
+    "n": 450,
+    "value": 0.2311111111111111
+   },
+   "imagenette160:fpr_png_all": {
+    "ci95": [
+     0.1688888888888889,
+     0.24222222222222223
+    ],
+    "n": 450,
+    "value": 0.20444444444444446
+   },
+   "imagenette160:fpr_png_real_photos": {
+    "ci95": [
+     0.25333333333333335,
+     0.36333333333333334
+    ],
+    "n": 300,
+    "value": 0.30666666666666664
+   },
+   "imagenette160:recall|lsb_matching|jpeg95|0.5": {
+    "ci95": [
+     0.2043888888888889,
+     0.2822222222222222
+    ],
+    "n": 450,
+    "value": 0.24222222222222223
+   },
+   "imagenette160:recall|lsb_matching|png|0.25": {
+    "ci95": [
+     0.2,
+     0.2777777777777778
+    ],
+    "n": 450,
+    "value": 0.23777777777777778
+   },
+   "imagenette160:recall|lsb_matching|png|0.5": {
+    "ci95": [
+     0.19111111111111112,
+     0.26666666666666666
+    ],
+    "n": 450,
+    "value": 0.22666666666666666
+   },
+   "imagenette160:recall|lsb_replace_keyed|png|0.25": {
+    "ci95": [
+     0.9888888888888889,
+     1.0
+    ],
+    "n": 450,
+    "value": 0.9955555555555555
+   },
+   "imagenette160:recall|lsb_replace|jpeg95|0.5": {
+    "ci95": [
+     0.24888888888888888,
+     0.3333333333333333
+    ],
+    "n": 450,
+    "value": 0.28888888888888886
+   },
+   "imagenette160:recall|lsb_replace|png|0.1": {
+    "ci95": [
+     0.6311111111111111,
+     0.7155555555555555
+    ],
+    "n": 450,
+    "value": 0.6733333333333333
+   },
+   "imagenette160:recall|lsb_replace|png|0.25": {
+    "ci95": [
+     0.9688888888888889,
+     0.9933333333333333
+    ],
+    "n": 450,
+    "value": 0.9822222222222222
+   },
+   "imagenette160:recall|lsb_replace|png|0.5": {
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n": 450,
+    "value": 1.0
+   }
+  }
+ },
+ "meta": {
+  "bootstrap": 2000,
+  "models": [
+   "model_v7_svm_rbf",
+   "model_v6_svm_rbf",
+   "model_v5_svm_rbf"
+  ],
+  "n_test_covers": 1050,
+  "notes": [
+   "Two held-out sets, source photos never used for train/val: imagenette160 (128px crops of 160px Imagenette + synthetic covers) and fullsize (128px crops of full-size decoded Imagenette JPEGs, real photos only).",
+   "v5 and v6 never saw full-size crops in training; v7 did (train split only). v5/v2 may have seen some imagenette160 test photos in dataset_v3 (favours them).",
+   "CIs: cluster bootstrap over covers, 2.5-97.5 percentiles. Single split, no cross-validation. Not BOSSBase, not camera RAW. Payload bits seeded random."
+  ],
+  "numpy": "2.2.6",
+  "python": "3.10.12",
+  "rows": 10500,
+  "seed": 2026,
+  "sklearn": "1.7.2",
+  "thresholds": {
+   "chi_p": 0.9,
+   "rs": 0.1
+  }
+ }
+}

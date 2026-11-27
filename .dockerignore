@@ -1,0 +1,8 @@
+**/node_modules
+**/__pycache__
+**/*.pyc
+.git
+backend/data
+frontend-react/dist
+*.db
+.pytest_cache

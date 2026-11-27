@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sublumen</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--fg:#e6edf3;--mut:#8b949e;--acc:#2f81f7;--ok:#3fb950;--warn:#d29922;--bad:#f85149}
+*{box-sizing:border-box}a{color:#58a6ff}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,Segoe UI,Roboto,sans-serif}
+header{display:flex;align-items:center;gap:16px;padding:12px 24px;border-bottom:1px solid var(--line);background:var(--card)}
+header h1{font-size:18px;margin:0}header small{color:var(--mut)}header .sp{flex:1}
+nav{display:flex;gap:4px;padding:8px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav button{background:none;border:0;color:var(--mut);padding:8px 14px;border-radius:6px;cursor:pointer;font-size:14px}
+nav button.on{background:var(--card);color:var(--fg);border:1px solid var(--line)}
+main{max-width:1100px;margin:0 auto;padding:20px 24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px}
+h2{margin:0 0 10px;font-size:16px}label{display:block;color:var(--mut);margin:8px 0 4px;font-size:12px}
+input,textarea,select{width:100%;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:8px}
+button.pri{background:var(--acc);color:#fff;border:0;border-radius:6px;padding:8px 16px;cursor:pointer;margin-top:10px}
+button.sec{background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 12px;cursor:pointer}
+.row{display:flex;gap:16px;flex-wrap:wrap}.row>*{flex:1;min-width:260px}
+table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;font-size:13px}
+.badge{padding:2px 8px;border-radius:10px;font-size:12px;font-weight:600}.low{background:#12301c;color:var(--ok)}.medium{background:#3a2d0b;color:var(--warn)}.high{background:#40181a;color:var(--bad)}.info,.unknown{background:#21262d;color:var(--mut)}
+.msg{padding:10px;border-radius:6px;margin-top:10px}.msg.err{background:#40181a;color:#ffb4ae}.msg.ok{background:#12301c;color:#9be9a8}
+.limits{border-left:3px solid var(--warn);padding:8px 12px;color:var(--mut);margin-top:10px;font-size:13px}
+.bar{height:10px;background:var(--acc);border-radius:5px}.mono{font-family:ui-monospace,Consolas,monospace;font-size:12px;word-break:break-all}
+img.pv{max-width:100%;border:1px solid var(--line);border-radius:6px;image-rendering:pixelated}
+.hide{display:none}.cap{color:var(--mut);font-size:12px;margin-top:4px}
+</style></head><body>
+<header><h1>Sublumen</h1><small>Find what the pixels hide.</small><span class="sp"></span><span id="who"></span><button class="sec hide" id="logout">Log out</button></header>
+<main id="login" class="card" style="max-width:380px;margin-top:60px"><h2>Sign in</h2>
+<label>Email</label><input id="em"><label>Password</label><input id="pw" type="password">
+<button class="pri" id="go">Sign in</button><div id="lerr"></div></main>
+<div id="app" class="hide"><nav id="nav"></nav><main id="view"></main></div>
+<script>
+let T=localStorage.getItem('ss_t'),CASE=null,EV=null;
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function api(path,opt={}){opt.headers=Object.assign({},opt.headers,T?{Authorization:'Bearer '+T}:{});
+ const r=await fetch('/api'+path,opt);const ct=r.headers.get('content-type')||'';
+ if(ct.includes('json')){const j=await r.json();if(j.status==='error')throw Object.assign(new Error(j.message),{code:j.code});return j}
+ if(!r.ok)throw new Error('Request failed');return r}
+const msg=(el,t,ok)=>{el.innerHTML=`<div class="msg ${ok?'ok':'err'}">${esc(t)}</div>`};
+const lvl=l=>`<span class="badge ${esc(l)}">${esc(String(l).toUpperCase())}</span>`;
+function fd(o){const f=new FormData();for(const k in o)f.append(k,o[k]);return f}
+$('#go').onclick=async()=>{try{const j=await api('/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:$('#em').value,password:$('#pw').value})});
+ T=j.token;localStorage.setItem('ss_t',T);localStorage.setItem('ss_u',j.email+' ('+j.role+')');boot()}catch(e){msg($('#lerr'),e.message)}};
+$('#logout').onclick=()=>{localStorage.clear();location.reload()};
+const TABS={studio:'Stego Studio',cases:'Cases & Evidence',visual:'Visual Lab',compare:'Compare',models:'Models',bench:'Benchmark Lab'};
+function boot(){if(!T)return;$('#login').classList.add('hide');$('#app').classList.remove('hide');$('#logout').classList.remove('hide');$('#who').textContent=localStorage.getItem('ss_u')||'';
+ $('#nav').innerHTML=Object.entries(TABS).map(([k,v])=>`<button data-k="${k}">${v}</button>`).join('');
+ $('#nav').onclick=e=>{if(e.target.dataset.k)show(e.target.dataset.k)};show('studio')}
+function show(k){document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.k===k));VIEWS[k]()}
+const VIEWS={
+studio(){$('#view').innerHTML=`<div class="row"><div class="card"><h2>Hide a message</h2>
+<label>Cover image (PNG or BMP)</label><input type="file" id="cv" accept=".png,.bmp"><label>Secret message</label><textarea id="sm" rows="4"></textarea>
+<label>Password (never stored, never logged)</label><input id="sp" type="password"><button class="pri" id="emb">Encrypt &amp; embed</button><div id="eo"></div></div>
+<div class="card"><h2>Extract a message</h2><label>Stego image</label><input type="file" id="sx" accept=".png,.bmp"><label>Password</label><input id="xp" type="password">
+<button class="pri" id="ext">Extract</button><div id="xo"></div></div></div>
+<div class="limits">Share the stego image as-is. Converting to JPEG, resizing or taking a screenshot destroys the hidden data. Pipeline: Argon2id key, AES-256-GCM, sequential LSB (R,G,B).</div>`;
+$('#emb').onclick=async()=>{const f=$('#cv').files[0];if(!f)return msg($('#eo'),'Choose a cover image');
+ try{const r=await api('/stego/embed?format=json',{method:'POST',body:fd({file:f,message:$('#sm').value,password:$('#sp').value})});
+ $('#eo').innerHTML=`<div class="msg ok">Embedded. PSNR ${r.psnr_db.toFixed(2)} dB, SSIM ${r.ssim.toFixed(4)}, payload ${(r.payload_rate*100).toFixed(1)}% of capacity (${r.capacity_bytes} bytes max).</div><p><a download="stego.png" href="data:image/png;base64,${r.stego_png_base64}">Download stego.png</a></p>`}catch(e){msg($('#eo'),e.message)}};
+$('#ext').onclick=async()=>{const f=$('#sx').files[0];if(!f)return msg($('#xo'),'Choose an image');
+ try{const r=await api('/stego/extract',{method:'POST',body:fd({file:f,password:$('#xp').value})});$('#xo').innerHTML=`<div class="msg ok">Message (${r.bytes} bytes):<br><b>${esc(r.message)}</b></div>`}catch(e){msg($('#xo'),e.message)}}},
+async cases(){const cs=(await api('/cases')).cases;
+$('#view').innerHTML=`<div class="row"><div class="card" style="flex:0 0 300px"><h2>Cases</h2><input id="nt" placeholder="New case title"><button class="pri" id="nc">Create</button><div id="co"></div>
+<table>${cs.map(c=>`<tr><td><a href="#" data-c="${c.id}">${esc(c.case_code)}</a></td><td>${esc(c.title)}</td></tr>`).join('')}</table></div><div id="cd" style="flex:2"></div></div>`;
+$('#nc').onclick=async()=>{try{const j=await api('/cases',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({title:$('#nt').value})});CASE=j.id;VIEWS.cases()}catch(e){msg($('#co'),e.message)}};
+$('#view').onclick=e=>{if(e.target.dataset.c){e.preventDefault();CASE=+e.target.dataset.c;detail()}};if(CASE)detail()},
+visual(){$('#view').innerHTML=`<div class="card"><h2>Visual Investigation Lab</h2><p class="cap">Pick evidence in Cases &amp; Evidence, then view it here. Every view states its type and limits.</p>
+<label>Evidence ID</label><input id="ve" value="${EV||''}"><div class="row"><div><label>Bit plane (0=LSB..7)</label><input id="vp" type="number" min="0" max="7" value="0"></div><div><label>Channel (0=R,1=G,2=B)</label><input id="vc" type="number" min="0" max="2" value="0"></div></div>
+<button class="pri" id="vb">Bit plane</button> <button class="pri" id="vh">Anomaly heatmap</button><div id="vo"></div></div>`;
+ const go=async(kind)=>{try{const q=kind==='bitplane'?`?plane=${$('#vp').value}&channel=${$('#vc').value}`:'';const r=await api(`/evidence/${$('#ve').value}/visual/${kind}${q}`);
+ const u=URL.createObjectURL(await r.blob());$('#vo').innerHTML=`<img class="pv" src="${u}"><div class="cap">${esc(r.headers.get('X-Visual-Caption'))}</div>`}catch(e){msg($('#vo'),e.message)}};
+ $('#vb').onclick=()=>go('bitplane');$('#vh').onclick=()=>go('heatmap')},
+compare(){$('#view').innerHTML=`<div class="card"><h2>Compare two images</h2><div class="row"><div><label>Image A</label><input type="file" id="ca"></div><div><label>Image B</label><input type="file" id="cb"></div></div><button class="pri" id="cg">Compare</button><div id="cr"></div></div>`;
+$('#cg').onclick=async()=>{try{const r=await api('/compare?diffmap=1',{method:'POST',body:fd({a:$('#ca').files[0],b:$('#cb').files[0]})});
+ $('#cr').innerHTML=`<table><tr><td>Identical bytes</td><td>${r.identical_bytes}</td></tr><tr><td>SHA-256 A</td><td class="mono">${r.sha256_a}</td></tr><tr><td>SHA-256 B</td><td class="mono">${r.sha256_b}</td></tr><tr><td>Differing pixels</td><td>${r.diff_pixels??'n/a'}</td></tr><tr><td>PSNR</td><td>${r.psnr_db?.toFixed?.(2)??'n/a'} dB</td></tr></table>${r.diff_map_png_base64?`<img class="pv" src="data:image/png;base64,${r.diff_map_png_base64}"><div class="cap">${esc(r.diff_map_caption)}</div>`:''}`}catch(e){msg($('#cr'),e.message)}}},
+async models(){const ms=(await api('/models')).models;$('#view').innerHTML=ms.map(m=>{const t=m.metrics.test,cv=m.metrics.cv;return `<div class="card"><h2>${esc(m.name)} <small class="cap">selected: ${esc(m.algo)} | trained ${esc(m.trained_at)} | seed ${m.seed}</small></h2>
+<table><tr><th>Model</th><th>CV F1</th><th>Test Acc</th><th>Recall</th><th>FPR</th><th>Precision</th><th>F1</th></tr>${Object.keys(t).map(k=>`<tr><td>${k}</td><td>${cv[k].cv_f1_mean.toFixed(3)}</td><td>${t[k].accuracy.toFixed(3)}</td><td>${t[k].recall.toFixed(3)}</td><td>${t[k].fpr.toFixed(3)}</td><td>${t[k].precision.toFixed(3)}</td><td>${t[k].f1.toFixed(3)}</td></tr>`).join('')}</table>
+<div class="limits"><b>Limitations:</b> ${m.metrics.limitations.map(esc).join(' ')}</div></div>`}).join('')||'<div class="card">No models registered.</div>'},
+async bench(){const bs=(await api('/benchmarks')).benchmarks;if(!bs.length){$('#view').innerHTML='<div class="card">No benchmark has been run yet. Run <span class="mono">python -m sublumen.benchmark.run</span>.</div>';return}
+const r=bs[0].result,rates=r.meta.rates;const cell=v=>`<td style="background:rgba(47,129,247,${v.toFixed(2)})">${(v*100).toFixed(0)}%</td>`;
+$('#view').innerHTML=`<div class="card"><h2>Detectors vs embedders (seed ${r.meta.seed}, ${r.meta.n_covers} held-out covers)</h2><table><tr><th>Detector</th><th>Embedder</th><th>Recall</th><th>FPR</th><th>Precision</th><th>F1</th></tr>
+${Object.entries(r.detectors).flatMap(([d,e])=>Object.entries(e).map(([k,v])=>`<tr><td>${d}</td><td>${k}</td><td>${(v.recall*100).toFixed(1)}%</td><td>${(v.fpr*100).toFixed(1)}%</td><td>${(v.precision*100).toFixed(1)}%</td><td>${v.f1.toFixed(3)}</td></tr>`)).join('')}</table></div>
+${['lsb_replace','lsb_replace_keyed','lsb_matching'].map(e=>`<div class="card"><h2>Recall grid: RF vs ${e} (cover type x payload rate)</h2><table><tr><th></th>${rates.map(x=>`<th>${x*100}%</th>`).join('')}</tr>
+${[...new Set(Object.keys(r.grid.random_forest[e]).map(k=>k.split('@')[0]))].map(t=>`<tr><td>${t}</td>${rates.map(x=>cell(r.grid.random_forest[e][t+'@'+x])).join('')}</tr>`).join('')}</table></div>`).join('')}
+<div class="card"><h2>Robustness (50% LSB replacement, recall)</h2><table><tr><th>Transform</th>${Object.keys(r.robustness_recall_at_50pct_replace.none).map(d=>`<th>${d}</th>`).join('')}</tr>${Object.entries(r.robustness_recall_at_50pct_replace).map(([t,v])=>`<tr><td>${t}</td>${Object.values(v).map(cell).join('')}</tr>`).join('')}</table></div>
+<div class="limits">${r.meta.notes.map(esc).join(' ')}</div>`}};
+async function detail(){const c=await api('/cases/'+CASE);
+$('#cd').innerHTML=`<div class="card"><h2>${esc(c.case_code)}: ${esc(c.title)}</h2><label>Upload evidence (PNG/BMP/JPEG)</label><input type="file" id="uf"><button class="pri" id="ub">Upload &amp; hash</button> <button class="sec" id="rp">Generate PDF report</button> <button class="sec" id="au">Audit trail</button><div id="do"></div>
+<table><tr><th>ID</th><th>File</th><th>SHA-256</th><th></th></tr>${c.evidence.map(e=>`<tr><td>${e.id}</td><td>${esc(e.name)}<br><span class="cap">${e.format} ${e.width}x${e.height}</span></td><td class="mono">${e.sha256.slice(0,24)}...</td><td><button class="sec" data-a="${e.id}">Analyze</button></td></tr>`).join('')}</table></div><div id="ar"></div>`;
+$('#ub').onclick=async()=>{const f=$('#uf').files[0];if(!f)return msg($('#do'),'Choose a file');try{const j=await api('/evidence',{method:'POST',body:fd({case_id:CASE,file:f})});EV=j.id;await detail();if(j.warning)msg($('#do'),j.warning,true)}catch(e){msg($('#do'),e.message)}};
+$('#rp').onclick=async()=>{try{const j=await api('/reports',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({case_id:CASE})});
+ const r=await api(j.download.replace(/^\/api/,''));const u=URL.createObjectURL(await r.blob());$('#do').innerHTML=`<div class="msg ok">Report ready. PDF SHA-256 <span class="mono">${j.pdf_sha256}</span> <a download="report.pdf" href="${u}">Download</a></div>`}catch(e){msg($('#do'),e.message)}};
+$('#au').onclick=async()=>{const a=await api(`/cases/${CASE}/audit`);$('#do').innerHTML=`<table>${a.events.map(x=>`<tr><td>${esc(x.timestamp)}</td><td>${esc(x.action)}</td><td class="mono">${esc(JSON.stringify(x.detail))}</td></tr>`).join('')}</table>`};
+$('#cd').onclick=async e=>{if(!e.target.dataset.a)return;EV=+e.target.dataset.a;try{const r=await api('/analyses',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({evidence_id:EV})});
+ $('#ar').innerHTML=`<div class="card"><h2>Analysis #${r.run_id} <small class="cap">no verdict: indicators only</small></h2><table><tr><th>Indicator</th><th>Value</th><th>Level</th><th>Note</th></tr>${r.indicators.map(i=>`<tr><td>${esc(i.name)}</td><td>${i.value??'-'}</td><td>${lvl(i.level)}</td><td class="cap">${esc(i.note)}</td></tr>`).join('')}
+ ${r.ml?`<tr><td>ML ${esc(r.ml.model)} (${esc(r.ml.algo)})</td><td>${r.ml.score.toFixed(3)}</td><td>${lvl(r.ml.level)}</td><td class="cap">${esc(r.ml.note)}</td></tr>`:''}</table>
+ ${r.warnings.map(w=>`<div class="msg err">${esc(w)}</div>`).join('')}<div class="limits"><b>Limitations</b><ul>${r.limitations.map(l=>`<li>${esc(l)}</li>`).join('')}</ul></div></div>`}catch(e){msg($('#ar'),e.message)}}}
+boot();
+</script></body></html>

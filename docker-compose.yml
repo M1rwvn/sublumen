@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ss
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      POSTGRES_DB: ss
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U ss"], interval: 5s, retries: 10 }
+  app:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    depends_on: { db: { condition: service_healthy } }
+    ports: ["5000:5000"]
+    environment:
+      SS_DB: postgresql+psycopg2://ss:${POSTGRES_PASSWORD}@db:5432/ss
+      SS_SECRET: ${SS_SECRET:?set SS_SECRET}
+      SS_ADMIN_EMAIL: ${SS_ADMIN_EMAIL:?set SS_ADMIN_EMAIL}
+      SS_ADMIN_PASSWORD: ${SS_ADMIN_PASSWORD:?set SS_ADMIN_PASSWORD}
+    volumes: [evidence:/data]
+volumes: { pgdata: {}, evidence: {} }

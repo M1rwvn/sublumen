@@ -1,0 +1,345 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840">
+  <rect width="1200" height="840" fill="#0A101E"/>
+  <rect x="0.5" y="0.5" width="1199" height="839" rx="24" fill="none" stroke="#26314D" stroke-width="1.5"/>
+  <rect x="760" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="786" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="812" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="838" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="864" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="890" y="30" width="14" height="14" rx="3" fill="#FFB224" opacity="0.08"/>
+  <rect x="916" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="942" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="968" y="30" width="14" height="14" rx="3" fill="#FFB224" opacity="0.18"/>
+  <rect x="994" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="1020" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="1046" y="30" width="14" height="14" rx="3" fill="#FFB224" opacity="0.18"/>
+  <rect x="1072" y="30" width="14" height="14" rx="3" fill="#FFB224" opacity="0.08"/>
+  <rect x="1098" y="30" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="760" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="786" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="812" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="838" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="864" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="890" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="916" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="942" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="968" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="994" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="1020" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.08"/>
+  <rect x="1046" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="1072" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="1098" y="56" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="760" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="786" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="812" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="838" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="864" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="890" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="916" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="942" y="82" width="14" height="14" rx="3" fill="#FFB224" opacity="0.18"/>
+  <rect x="968" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.05"/>
+  <rect x="994" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="1020" y="82" width="14" height="14" rx="3" fill="#FFB224" opacity="0.05"/>
+  <rect x="1046" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.12"/>
+  <rect x="1072" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+  <rect x="1098" y="82" width="14" height="14" rx="3" fill="#93A4C4" opacity="0.18"/>
+
+  <text x="60" y="58" font-family="IBM Plex Mono SemiBold" font-weight="500" font-size="17" letter-spacing="4" fill="#FFB224">SUBLUMEN / BRAND IDENTITY</text>
+  <text x="60" y="86" font-family="IBM Plex Mono" font-size="13" letter-spacing="2" fill="#5F7099">AI STEGANOGRAPHY DETECTION + DIGITAL FORENSICS PLATFORM - v1.0</text>
+  <line x1="60" y1="110" x2="1140" y2="110" stroke="#26314D" stroke-width="1"/>
+
+  <svg xmlns="http://www.w3.org/2000/svg" x="60" y="150" width="640" height="160" viewBox="0 0 960 240">
+  <svg xmlns="http://www.w3.org/2000/svg" x="0" y="40" width="160" height="160" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFB224"/>
+      <stop offset="1" stop-color="#EE8F00"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFB224" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#FFB224" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="tileClip"><rect x="1" y="1" width="126" height="126" rx="28"/></clipPath>
+    <linearGradient id="beam" x1="0.55" y1="0" x2="1" y2="0.75">
+      <stop offset="0" stop-color="#FFB224" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFB224" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="126" height="126" rx="28" fill="#EDF1F7" stroke="#C9D3E6" stroke-width="2"/>
+  <ellipse cx="64" cy="64" rx="56" ry="56" fill="url(#glow)"/>
+  <g>
+    <rect x="26" y="26" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="26" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="26" y="42" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="42" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="58" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="74" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="90" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="26" y="58" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="58" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="26" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="58" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="74" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="90" y="74" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="26" y="90" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="90" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+  </g>
+  <g clip-path="url(#tileClip)"><polygon points="64,1 127,1 127,90" fill="url(#beam)"/></g>
+</svg>
+
+  <text x="206" y="152" font-family="Space Grotesk SemiBold" font-weight="500" font-size="92" letter-spacing="-1">
+    <tspan fill="#8FA1C2">sub</tspan><tspan fill="#EDF1F7">lumen</tspan>
+  </text>
+  <text x="210" y="204" font-family="IBM Plex Mono" font-weight="500" font-size="25" letter-spacing="5.5" fill="#6E80A5">FIND WHAT THE PIXELS HIDE.</text>
+</svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" x="820" y="120" width="150" height="150" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC44D"/>
+      <stop offset="1" stop-color="#FF9F1C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFB224" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFB224" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="tileClip"><rect x="1" y="1" width="126" height="126" rx="28"/></clipPath>
+    <linearGradient id="beam" x1="0.55" y1="0" x2="1" y2="0.75">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="126" height="126" rx="28" fill="#101A30" stroke="#26314D" stroke-width="2"/>
+  <ellipse cx="64" cy="64" rx="56" ry="56" fill="url(#glow)"/>
+  <g>
+    <rect x="26" y="26" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="42" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="26" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="26" y="42" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="42" y="42" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="58" y="42" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="74" y="42" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="90" y="42" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="26" y="58" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="42" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="58" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="26" y="74" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="42" y="74" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="58" y="74" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="74" y="74" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="90" y="74" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="26" y="90" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+    <rect x="42" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="90" width="12" height="12" rx="3" fill="#93A4C4" opacity="0.26"/>
+  </g>
+  <g clip-path="url(#tileClip)"><polygon points="64,1 127,1 127,90" fill="url(#beam)"/></g>
+</svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" x="1000" y="120" width="150" height="150" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFB224"/>
+      <stop offset="1" stop-color="#EE8F00"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFB224" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#FFB224" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="tileClip"><rect x="1" y="1" width="126" height="126" rx="28"/></clipPath>
+    <linearGradient id="beam" x1="0.55" y1="0" x2="1" y2="0.75">
+      <stop offset="0" stop-color="#FFB224" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFB224" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="126" height="126" rx="28" fill="#EDF1F7" stroke="#C9D3E6" stroke-width="2"/>
+  <ellipse cx="64" cy="64" rx="56" ry="56" fill="url(#glow)"/>
+  <g>
+    <rect x="26" y="26" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="26" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="26" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="26" y="42" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="42" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="58" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="74" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="90" y="42" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="26" y="58" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="58" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="58" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="26" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="58" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="74" y="74" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="90" y="74" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="26" y="90" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+    <rect x="42" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="58" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="74" y="90" width="12" height="12" rx="3" fill="url(#accent)"/>
+    <rect x="90" y="90" width="12" height="12" rx="3" fill="#3A4A6B" opacity="0.30"/>
+  </g>
+  <g clip-path="url(#tileClip)"><polygon points="64,1 127,1 127,90" fill="url(#beam)"/></g>
+</svg>
+
+  <text x="60" y="368" font-family="IBM Plex Mono" font-size="13" letter-spacing="2" fill="#5F7099">PRIMARY LOCKUP - MARK: A PIXEL FIELD REVEALING A HIDDEN "S" UNDER LIGHT</text>
+  <text x="820" y="368" font-family="IBM Plex Mono" font-size="12" fill="#5F7099">DARK TILE / LIGHT BG</text>
+  <text x="1000" y="368" font-family="IBM Plex Mono" font-size="12" fill="#5F7099">LIGHT TILE / DARK BG</text>
+
+  <line x1="60" y1="400" x2="1140" y2="400" stroke="#26314D" stroke-width="1"/>
+  <rect x="60" y="430" width="200" height="96" rx="10" fill="#0A101E" stroke="#26314D" stroke-width="1.5"/>
+  <text x="60" y="552" font-family="Space Grotesk SemiBold" font-weight="500" font-size="20" fill="#EDF1F7">Forensic Ink</text>
+  <text x="60" y="576" font-family="IBM Plex Mono" font-size="16" fill="#8FA1C2">#0A101E</text>
+  <text x="60" y="598" font-family="IBM Plex Mono" font-size="13" fill="#8FA1C2" opacity="0.75">primary background</text><rect x="282" y="430" width="200" height="96" rx="10" fill="#141D33" stroke="#26314D" stroke-width="1.5"/>
+  <text x="282" y="552" font-family="Space Grotesk SemiBold" font-weight="500" font-size="20" fill="#EDF1F7">Deep Field</text>
+  <text x="282" y="576" font-family="IBM Plex Mono" font-size="16" fill="#8FA1C2">#141D33</text>
+  <text x="282" y="598" font-family="IBM Plex Mono" font-size="13" fill="#8FA1C2" opacity="0.75">panels &amp; surfaces</text><rect x="504" y="430" width="200" height="96" rx="10" fill="#5F7099"/>
+  <text x="504" y="552" font-family="Space Grotesk SemiBold" font-weight="500" font-size="20" fill="#EDF1F7">Ghost Pixel</text>
+  <text x="504" y="576" font-family="IBM Plex Mono" font-size="16" fill="#8FA1C2">#5F7099</text>
+  <text x="504" y="598" font-family="IBM Plex Mono" font-size="13" fill="#8FA1C2" opacity="0.75">secondary text</text><rect x="726" y="430" width="200" height="96" rx="10" fill="#EDF1F7" stroke="#26314D" stroke-width="1.5"/>
+  <text x="726" y="552" font-family="Space Grotesk SemiBold" font-weight="500" font-size="20" fill="#EDF1F7">Paper</text>
+  <text x="726" y="576" font-family="IBM Plex Mono" font-size="16" fill="#8FA1C2">#EDF1F7</text>
+  <text x="726" y="598" font-family="IBM Plex Mono" font-size="13" fill="#8FA1C2" opacity="0.75">text on dark / light bg</text><rect x="948" y="430" width="200" height="96" rx="10" fill="#FFB224"/>
+  <text x="948" y="552" font-family="Space Grotesk SemiBold" font-weight="500" font-size="20" fill="#EDF1F7">Reveal Amber</text>
+  <text x="948" y="576" font-family="IBM Plex Mono" font-size="16" fill="#8FA1C2">#FFB224</text>
+  <text x="948" y="598" font-family="IBM Plex Mono" font-size="13" fill="#8FA1C2" opacity="0.75">signature accent</text>
+
+  <text x="60" y="640" font-family="Space Grotesk SemiBold" font-weight="500" font-size="44" fill="#EDF1F7">Aa</text>
+  <text x="130" y="640" font-family="Space Grotesk SemiBold" font-weight="500" font-size="24" fill="#EDF1F7">Space Grotesk <tspan fill="#5F7099" font-family="Space Grotesk Medium">- display, headings, wordmark</tspan></text>
+  <text x="130" y="672" font-family="Space Grotesk Medium" font-weight="500" font-size="18" fill="#5F7099">Find what the pixels hide.</text>
+
+  <text x="680" y="640" font-family="IBM Plex Mono SemiBold" font-weight="500" font-size="40" fill="#EDF1F7">Aa</text>
+  <text x="750" y="636" font-family="IBM Plex Mono Medium" font-weight="500" font-size="18" fill="#EDF1F7">IBM Plex Mono <tspan fill="#5F7099">- data + readouts</tspan></text>
+  <text x="750" y="664" font-family="IBM Plex Mono" font-size="14" fill="#5F7099">LSB 0x3F91 - ENTROPY 7.82 - MATCH FOUND</text>
+
+  <svg xmlns="http://www.w3.org/2000/svg" x="180" y="688" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC44D"/>
+      <stop offset="1" stop-color="#FF9F1C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="15" fill="#101A30" stroke="#26314D"/>
+  <g>
+    <rect x="7.0" y="7.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="7.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="17.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="17.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="27.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="37.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="47.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="27.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="27.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="27.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="37.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="47.0" y="37.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="7.0" y="47.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="47.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="110" y="704" width="48" height="48" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC44D"/>
+      <stop offset="1" stop-color="#FF9F1C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="15" fill="#101A30" stroke="#26314D"/>
+  <g>
+    <rect x="7.0" y="7.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="7.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="17.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="17.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="27.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="37.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="47.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="27.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="27.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="27.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="37.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="47.0" y="37.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="7.0" y="47.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="47.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="60" y="720" width="32" height="32" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC44D"/>
+      <stop offset="1" stop-color="#FF9F1C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="15" fill="#101A30" stroke="#26314D"/>
+  <g>
+    <rect x="7.0" y="7.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="7.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="7.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="17.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="17.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="27.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="37.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="47.0" y="17.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="27.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="27.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="27.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="7.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="27.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="37.0" y="37.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="47.0" y="37.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="7.0" y="47.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+    <rect x="17.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="27.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="37.0" y="47.0" width="7.4" height="7.4" rx="2" fill="url(#accent)"/>
+    <rect x="47.0" y="47.0" width="7.4" height="7.4" rx="2" fill="#93A4C4" opacity="0.22"/>
+  </g>
+</svg>
+
+  <text x="60" y="788" font-family="IBM Plex Mono" font-size="13" fill="#5F7099">FAVICON 64 / 48 / 32</text>
+  <text x="700" y="708" font-family="IBM Plex Mono" font-size="13" letter-spacing="1" fill="#5F7099">CLEAR SPACE = ONE PIXEL CELL ON ALL SIDES.</text>
+  <text x="700" y="732" font-family="IBM Plex Mono" font-size="13" letter-spacing="1" fill="#5F7099">NEVER RECOLOR THE AMBER "S" - IT IS THE REVEALED LAYER.</text>
+  <text x="700" y="756" font-family="IBM Plex Mono" font-size="13" letter-spacing="1" fill="#5F7099">MIN MARK SIZE: 24 PX DIGITAL / 8 MM PRINT.</text>
+</svg>
