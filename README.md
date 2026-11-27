@@ -1,7 +1,7 @@
 # Sublumen
 **Find what the pixels hide.**
 
-Sublumen is a steganography and digital-forensics workbench. It can hide an encrypted message in an image (Stego Studio), and it can examine an image for signs that something was hidden (statistical tests, an ML detector, visual tools), keeping every step in a case file with hashes, an audit trail and a reproducible PDF report. It started from the StegoSentinel X blueprint v1.0 (graduation project).
+Sublumen is a steganography and digital-forensics workbench. It can hide an encrypted message in an image (Stego Studio), and it can examine an image for signs that something was hidden (statistical tests, an ML detector, visual tools), keeping every step in a case file with hashes, an audit trail and a reproducible PDF report. It is a personal project, built in spare time for fun, that started from the StegoSentinel X blueprint v1.0.
 
 ![Demo case](docs/img/demo-case.png)
 
