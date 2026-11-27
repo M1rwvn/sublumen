@@ -1,7 +1,14 @@
 # Sublumen
 **Find what the pixels hide.**
 
-Sublumen is a steganography and digital-forensics workbench. It can hide an encrypted message in an image (Stego Studio), and it can examine an image for signs that something was hidden (statistical tests, an ML detector, visual tools), keeping every step in a case file with hashes, an audit trail and a reproducible PDF report. It is a personal project, built in spare time for fun, that started from the StegoSentinel X blueprint v1.0.
+Sublumen is a steganography and digital-forensics workbench with a web UI and an API. It hides an encrypted message in an image (Stego Studio) and examines an image for signs that something was hidden: statistical tests, a machine-learning detector, and visual tools. Every step is kept in a case file with SHA-256 hashes, an audit trail and a reproducible PDF report, with the limits of each result stated next to the result.
+
+**Who it is for:** forensic and security analysts who need a documented, repeatable first look at an image, researchers who want a transparent LSB-steganalysis baseline, and teams that want to embed and extract messages in a controlled way.
+
+**Status at a glance**
+- Works and tested: AES-256-GCM embedding and extraction, case and evidence handling with an audit trail, PDF reports, 6 statistical indicators, the v8 detector, a React UI (light and dark themes, Arabic text support, 0 axe violations on the audited screens), and an OpenAPI description. The test suite passes in CI (`pytest` for the backend, `vitest` and a build for the frontend).
+- Measured on a locked test of unseen photos (`docs/locked_eval_v8.json`): the v8 detector separates clean from stego images with AUC 0.99 on lossless photos from two families it never saw in training. Clean false alarms are about 2-6% at the chosen threshold.
+- **NOT VERIFIED:** Docker deployment; third-party steganography tools and non-LSB methods; JPEG-recompressed stego (mostly missed, about 7% recall); camera RAW and BOSSBase; running on other machines beyond CI. Details are in `docs/LIMITATIONS.md` and in the results section below.
 
 ![Demo case](docs/img/demo-case.png)
 
